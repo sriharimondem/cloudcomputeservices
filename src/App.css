@@ -1,16 +1,6 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -35,4 +25,89 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fff;
+  color: #848484;
+  font-weight: 300;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.bg {
+  background-image: url("../public/hero-bg.jpg");
+  z-index: 1;
+  background-position: 0px 0px;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 630px;
+}
+
+.linksContainer {
+  flex: 1;
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: inline-flex;
+  align-items: center;
+}
+
+.linksContainer > div {
+  margin: 6px;
+}
+
+.navbar-brand {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar {
+  padding-top: 2rem;
+}
+
+.homeContainer {
+  height: 562px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  height: 630px;
+}
+
+.App > * {
+  z-index: 3;
+}
+
+ul.navbar-nav > li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.welcomeText {
+  top: 15rem;
+  position: absolute;
+  left: 30rem;
+  font-size: 50px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
