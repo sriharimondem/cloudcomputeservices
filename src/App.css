@@ -63,6 +63,8 @@
 .navbar-brand {
   background-color: transparent;
   border: none;
+  width: 200px;
+  height: 100px;
 }
 
 .navbar {
@@ -110,4 +112,55 @@ ul.navbar-nav > li a {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.card {
+  margin-bottom: 4rem;
+}
+
+.card-icon {
+  width: 150px !important;
+  padding: 10px 30px 20px 0;
+  float: left;
+}
+
+.card-text {
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.card-title {
+  font-size: 25px !important;
+  color: #1E90FF;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer {
+  background: #fff;
+  padding: 60px 0 40px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  /* padding: 5px 0; */
+}
+
+.appDevManContainer, .enterprisePageContainer, .securityPageContainer {
+  position: relative;
+  height: 562px;
+}
+
+.pageHeading {
+  line-height: 400px;
+  letter-spacing: 12px;
+  font-size: 4rem;
+}
+
+.dropdown-menu a {
+  z-index: 9999;
 }

@@ -5,7 +5,7 @@ function TopNav() {
         <nav className="navbar navbar-expand-lg">
             <div className="container">
                 <button type="button" className="navbar-brand">
-                    <img src={process.env.PUBLIC_URL + "/cloud-resources-logo-light.png"} alt="brand logo" width={300} height={"auto"}/>
+                    <img src={process.env.PUBLIC_URL + "/CCS_Logo_Final_PNG-03.png"} alt="brand logo" width={200} height={"auto"}/>
                 </button>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -20,9 +20,9 @@ function TopNav() {
                             Services
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item" href="#">Application Development and Management</a></li>
-                            <li><a className="dropdown-item" href="#">Enterprise Cloud Services and Solutions </a></li>
-                            {/* <li><hr className="dropdown-divider"></li> */}
+                            <Link to={"/applicationdevmanagement"} className="dropdown-item">Application Development and Management</Link>
+                            <Link to={"/enterpriseServicesSolutions"} className="dropdown-item">Enterprise Cloud Services and Solutions</Link>
+                            <Link to={"/security"} className="dropdown-item">Security</Link>
                             <li><a className="dropdown-item" href="#">Big Data Analytics</a></li>
                             <li><a className="dropdown-item" href="#">Enterprise Architecture</a></li>
                             <li><a className="dropdown-item" href="#">Technology Consulting</a></li>
