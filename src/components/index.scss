@@ -1,0 +1,22 @@
+@import './stylesheets/gridbox.scss';
+
+
+.d-flex{
+   display: flex !important; 
+}
+
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+.justify-around {
+  justify-content: space-around !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-flex-end {
+  justify-content: flex-end !important;
+}
